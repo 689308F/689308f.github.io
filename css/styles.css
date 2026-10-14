@@ -598,3 +598,8 @@ footer {
   white-space: nowrap;
   border: 0;
 }
+
+/* Market and sustainability: figures on the right */
+.side-figs { display: grid; gap: 1rem; align-items: start; }
+.side-figs img { width: 100%; height: auto; }
+.side-figs figure:first-child img[src*="fig7"] { max-width: 260px; margin: 0 auto; display: block; }
