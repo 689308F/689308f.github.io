@@ -591,3 +591,18 @@ footer {
 .side-figs { display: grid; gap: 1rem; align-items: start; }
 .side-figs img { width: 100%; height: auto; }
 .side-figs figure:first-child img[src*="fig7"] { max-width: 260px; margin: 0 auto; display: block; }
+
+/* Figure layout: keep each section's figures level with its text */
+.loc-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); }
+.loc-figs { gap: 0.75rem; }
+.loc-figs figcaption, .side-figs figcaption { font-size: 0.8rem; padding: 0.4rem 0.5rem; }
+.side-figs { gap: 0.75rem; }
+#the-market .side-figs { grid-template-columns: 1fr 1fr; }
+#the-market .side-figs img[src*="fig7"] { max-width: 100%; }
+#sustainability-impacts .side-figs img { max-height: 430px; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+@media (max-width: 900px) {
+  .loc-grid { grid-template-columns: 1fr; }
+  .loc-figs, .side-figs { max-width: 520px; }
+}
+.loc-figs img { max-height: 135px; width: auto; max-width: 100%; margin: 0 auto; display: block; }
+.loc-figs .pair-imgs { justify-items: center; }
